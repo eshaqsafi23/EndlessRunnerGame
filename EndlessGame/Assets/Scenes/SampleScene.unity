@@ -355,7 +355,7 @@ GameObject:
   - component: {fileID: 538812622}
   - component: {fileID: 538812621}
   m_Layer: 5
-  m_Name: Image (1)
+  m_Name: luoti2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -845,7 +845,7 @@ GameObject:
   - component: {fileID: 1032226042}
   - component: {fileID: 1032226041}
   m_Layer: 5
-  m_Name: Image (4)
+  m_Name: luoti5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1111,7 +1111,7 @@ GameObject:
   - component: {fileID: 1195845539}
   - component: {fileID: 1195845538}
   m_Layer: 5
-  m_Name: Image (5)
+  m_Name: luoti6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1720,7 +1720,7 @@ GameObject:
   - component: {fileID: 1827403208}
   - component: {fileID: 1827403207}
   m_Layer: 5
-  m_Name: Image (3)
+  m_Name: luoti4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1795,7 +1795,7 @@ GameObject:
   - component: {fileID: 1843615008}
   - component: {fileID: 1843615007}
   m_Layer: 5
-  m_Name: Image
+  m_Name: luoti1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1937,7 +1937,7 @@ GameObject:
   - component: {fileID: 2084264055}
   - component: {fileID: 2084264054}
   m_Layer: 5
-  m_Name: Image (2)
+  m_Name: luoti3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
