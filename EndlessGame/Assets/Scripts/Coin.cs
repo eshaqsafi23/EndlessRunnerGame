@@ -16,6 +16,22 @@ public class Coin : MonoBehaviour
         
         
             transform.Rotate(0, 90 * Time.deltaTime, 0);
+
         
+
     }
+    void OnCollisionEnter(Collision collision)
+    {
+        
+        
+        if (collision.collider.gameObject.tag != "bullet")
+        {
+            collision.gameObject.GetComponent<CharacterController>().points++;
+            Destroy(gameObject);
+
+        }
+    }
+
+
+
 }

@@ -6,6 +6,8 @@ public class CharacterController : MonoBehaviour
 {
     public float movementSpeed = 10f;
     public SpawnManager spawnManager;
+    public int points = 0;
+    
 
     // Start is called before the first frame update
     void Start()
@@ -26,5 +28,11 @@ public class CharacterController : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         spawnManager.SpawnTriggerEntered();
+     
     }
+    private void OnGUI()
+    {
+        GUI.Label(new Rect(10, 10, 100, 20), "Score : " + points);
+    }
+
 }
