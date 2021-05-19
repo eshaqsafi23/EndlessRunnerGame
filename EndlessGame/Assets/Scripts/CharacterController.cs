@@ -19,9 +19,42 @@ public class CharacterController : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    {
+    {   // Antinjutut
+
         float hMovement = Input.GetAxis("Horizontal") * movementSpeed / 2;
         float vMovement = Input.GetAxis("Vertical") * movementSpeed;
+
+        if (transform.position.x < -14 && hMovement < 0)
+        {
+            hMovement = 0;
+
+        }
+        else if (transform.position.x > -1 && hMovement > 0)
+        {
+            hMovement = 0;
+        }
+
+
+        transform.Translate(new Vector3(hMovement, 0, vMovement) * Time.deltaTime);
+
+        if (Input.GetButtonDown("Fire1"))
+        {
+            RaycastHit hit;
+            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+
+            if (Physics.Raycast(ray, out hit))
+            {
+                GameObject objectHit = hit.transform.gameObject; // esim. kaktus
+                if (objectHit.CompareTag("Shootable"))
+                {
+                    Rigidbody objRB = objectHit.AddComponent<Rigidbody>();
+                    objRB.mass = 0.1f;
+                    Vector3 shootDirection = objectHit.transform.position - gameObject.transform.position;
+
+                    objRB.AddForceAtPosition(shootDirection, hit.point);
+                }
+            }
+        }
 
         transform.Translate(new Vector3(hMovement, 0, vMovement) * Time.deltaTime);
 
