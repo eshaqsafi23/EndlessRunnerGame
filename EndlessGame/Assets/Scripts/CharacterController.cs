@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityStandardAssets.CrossPlatformInput;
 
 
 public class CharacterController : MonoBehaviour
@@ -10,6 +11,7 @@ public class CharacterController : MonoBehaviour
     public int points = 0;
     public float autoMoveSpeed;
     public ParticleSystem GunFire;
+    
 
     void Start()
     {
@@ -19,10 +21,9 @@ public class CharacterController : MonoBehaviour
     void Update()
     {   // Antinjutut
         // Sivuliike
-        float hMovement = Input.GetAxis("Horizontal") * movementSpeed / 2;
+        float hMovement = CrossPlatformInputManager.GetAxis("Horizontal") * movementSpeed / 2;
        
-        //crossplatform
-        
+               
         //Sivuliikkeen rajoitus
         if (transform.position.x < -14 && hMovement < 0)
         {
@@ -37,7 +38,7 @@ public class CharacterController : MonoBehaviour
         // Liikuttaa pelaajaa, sivuliike GetAxis, eteenpäinliike säädetään itse autoMoveSpeed
         transform.Translate(new Vector3(hMovement, 0, autoMoveSpeed) * Time.deltaTime);
 
-
+        
         // Antin ampuminen
         if (Input.GetButtonDown("Fire1"))
         {
@@ -65,7 +66,8 @@ public class CharacterController : MonoBehaviour
                 }
             }
         }
-    }
+    
+        }
        
     private void OnTriggerEnter(Collider other)
     {
