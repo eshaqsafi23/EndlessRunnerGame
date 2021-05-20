@@ -27,4 +27,14 @@ public class HeartSystem : MonoBehaviour
     {
         life -= d;
     }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.collider.gameObject.CompareTag("Enemy"))
+        {
+            TakeDamage(1);
+        }
+       
+
+    }
 }
