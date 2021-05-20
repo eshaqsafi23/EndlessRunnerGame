@@ -8,6 +8,7 @@ TagManager:
   - bullet
   - SpawnTrigger
   - SpawenManager
+  - Shootable
   layers:
   - Default
   - TransparentFX
