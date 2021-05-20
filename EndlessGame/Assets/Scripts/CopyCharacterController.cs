@@ -29,6 +29,7 @@ public class CopyCharacterController : MonoBehaviour
             hMovement = 0;
         }
 
+        
 
         transform.Translate(new Vector3(hMovement, 0, vMovement) * Time.deltaTime);
 
