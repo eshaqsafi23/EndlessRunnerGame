@@ -9,6 +9,7 @@ TagManager:
   - SpawnTrigger
   - SpawenManager
   - Shootable
+  - Enemy
   layers:
   - Default
   - TransparentFX
