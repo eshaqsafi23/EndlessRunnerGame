@@ -7,15 +7,16 @@ public class CharacterController : MonoBehaviour
     public float movementSpeed = 10f;
     public SpawnManager spawnManager;
     public int points = 0;
+  
     
-    void Start()
-    {
-        
-    }
+    
+    
 
     // Update is called once per frame
     void Update()
     {
+       
+
         float hMovement = Input.GetAxis("Horizontal") * movementSpeed / 2;
         float vMovement = Input.GetAxis("Vertical") * movementSpeed;
 
@@ -50,9 +51,9 @@ public class CharacterController : MonoBehaviour
                 }
             }
         }
-
+        
     }
-
+    
     private void OnTriggerEnter(Collider other)
     {
         spawnManager.SpawnTriggerEntered();
@@ -60,7 +61,8 @@ public class CharacterController : MonoBehaviour
     }
     private void OnGUI()
     {
-        GUI.Label(new Rect(10, 10, 100, 20), "Score : " + points);
+        GUI.Label(new Rect(10, 30, 100, 30), "COINS : " + points);
     }
-
+    
+   
 }
