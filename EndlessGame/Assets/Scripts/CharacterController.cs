@@ -61,7 +61,7 @@ public class CharacterController : MonoBehaviour
     }
     private void OnGUI()
     {
-        GUI.Label(new Rect(10, 30, 100, 30), "COINS : " + points);
+        GUI.Label(new Rect(10, 30, 100, 30),"COINS :   " + points);
     }
     
    
