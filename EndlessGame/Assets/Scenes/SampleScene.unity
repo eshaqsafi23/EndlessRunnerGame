@@ -1526,9 +1526,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c7040f2e02299f408c0e45536c52aa9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  buttonPressed: 0
   movementSpeed: 30
   spawnManager: {fileID: 1635015232}
   points: 0
+  autoMoveSpeed: 0
+  GunFire: {fileID: 0}
 --- !u!114 &815528786
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3774,9 +3777,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c7040f2e02299f408c0e45536c52aa9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  buttonPressed: 0
   movementSpeed: 30
   spawnManager: {fileID: 1635015232}
   points: 0
+  autoMoveSpeed: 5
+  GunFire: {fileID: 5983842374101159168, guid: 9773c95b7b89b1347b7a406d4b8eb500, type: 3}
 --- !u!65 &1598597064
 BoxCollider:
   m_ObjectHideFlags: 0
