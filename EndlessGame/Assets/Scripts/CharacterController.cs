@@ -58,8 +58,8 @@ public class CharacterController : MonoBehaviour, IPointerDownHandler, IPointerU
         {
             //Soitetaan partikkeliefekti pyssystä
              
-            GunFire.Play();
-            Debug.Log("particle");
+            
+            
             RaycastHit hit;
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
 
@@ -74,7 +74,7 @@ public class CharacterController : MonoBehaviour, IPointerDownHandler, IPointerU
                     Rigidbody objRB = objectHit.AddComponent<Rigidbody>();
                     objRB.mass = 0.1f;
                     Vector3 shootDirection = objectHit.transform.position - gameObject.transform.position;
-
+                    GunFire.Play();
 
                     objRB.AddForceAtPosition(shootDirection, hit.point);
                    
