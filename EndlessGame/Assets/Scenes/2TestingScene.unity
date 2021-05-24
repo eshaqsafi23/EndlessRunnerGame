@@ -1876,7 +1876,7 @@ SpriteRenderer:
   m_Size: {x: 40.96, y: 40.96}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1001 &943591291
@@ -2028,7 +2028,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 404, y: -75}
+  m_AnchoredPosition: {x: 160, y: -75}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &976148039
@@ -2498,7 +2498,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2580335868994651824, guid: d61ff82a2d31baa4b91a2e31ae9f5b81, type: 3}
       propertyPath: m_TagString
-      value: Shootable
+      value: Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 4114925039432728050, guid: d61ff82a2d31baa4b91a2e31ae9f5b81, type: 3}
       propertyPath: m_TagString
@@ -3146,7 +3146,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 301, y: -75}
+  m_AnchoredPosition: {x: 57, y: -75}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1666853076
@@ -3444,7 +3444,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 503, y: -75}
+  m_AnchoredPosition: {x: 263, y: -75}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1780209862
@@ -3520,9 +3520,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c7040f2e02299f408c0e45536c52aa9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  buttonPressed: 0
   movementSpeed: 30
   spawnManager: {fileID: 640005016}
   points: 0
+  autoMoveSpeed: 0
+  GunFire: {fileID: 0}
 --- !u!65 &1810210770
 BoxCollider:
   m_ObjectHideFlags: 0
