@@ -11,6 +11,7 @@ TagManager:
   - Shootable
   - Enemy
   - Bank
+  - Ground
   layers:
   - Default
   - TransparentFX
