@@ -10,8 +10,6 @@ TagManager:
   - SpawenManager
   - Shootable
   - Enemy
-  - Bank
-  - Ground
   layers:
   - Default
   - TransparentFX

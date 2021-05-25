@@ -43,7 +43,7 @@ public class HeartSystem : MonoBehaviour
 
         if (life == 0)
         {
-            SceneManager.LoadScene("SampleScene");
+            SceneManager.LoadScene("2TestingScene");
 
         }
 
