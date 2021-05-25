@@ -29,7 +29,7 @@ public class CharacterController : MonoBehaviour, IPointerDownHandler, IPointerU
 
     void Start()
     {
-        //UUs versio
+        
     }
 
     void Update()
@@ -66,8 +66,8 @@ public class CharacterController : MonoBehaviour, IPointerDownHandler, IPointerU
         if (Input.GetButtonDown("Fire1"))
         {
             //Soitetaan partikkeliefekti pyssystä
-             
-            
+
+            Debug.Log("PEWPEW");
             
             RaycastHit hit;
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
