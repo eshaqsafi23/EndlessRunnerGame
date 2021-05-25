@@ -8,6 +8,11 @@ using UnityEngine.EventSystems;
 public class CharacterController : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
 {
     public bool buttonPressed;
+    public float movementSpeed = 10f;
+    public SpawnManager spawnManager;
+    public int points = 0;
+    public float autoMoveSpeed;
+    public ParticleSystem GunFire;
 
     public void OnPointerDown(PointerEventData eventData)
     {
@@ -18,17 +23,22 @@ public class CharacterController : MonoBehaviour, IPointerDownHandler, IPointerU
     {
         buttonPressed = false;
     }
+<<<<<<< HEAD
     public float movementSpeed = 10f;
     public SpawnManager spawnManager;
     public int points = 0;
     public float autoMoveSpeed;
     public ParticleSystem GunFire;
     
+=======
+
+
+>>>>>>> 733f7762f174732c2709ee2c1e9269ad3430a821
 
 
     void Start()
     {
-
+        //UUs versio
     }
 
     void Update()
@@ -65,8 +75,9 @@ public class CharacterController : MonoBehaviour, IPointerDownHandler, IPointerU
         if (Input.GetButtonDown("Fire1"))
         {
             //Soitetaan partikkeliefekti pyssystä
-            GunFire.Play();
-
+             
+            
+            
             RaycastHit hit;
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
 
@@ -81,10 +92,10 @@ public class CharacterController : MonoBehaviour, IPointerDownHandler, IPointerU
                     Rigidbody objRB = objectHit.AddComponent<Rigidbody>();
                     objRB.mass = 0.1f;
                     Vector3 shootDirection = objectHit.transform.position - gameObject.transform.position;
-
+                    GunFire.Play();
 
                     objRB.AddForceAtPosition(shootDirection, hit.point);
-
+                   
                 }
             }
         }
