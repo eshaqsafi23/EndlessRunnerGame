@@ -492,7 +492,11 @@ RectTransform:
   m_GameObject: {fileID: 921692750}
   m_LocalRotation: {x: -0, y: -0, z: 0.042716, w: 0.99908733}
   m_LocalPosition: {x: 0, y: 0, z: 0}
+<<<<<<< HEAD
   m_LocalScale: {x: 1.0100863, y: 3.0173986, z: 1}
+=======
+  m_LocalScale: {x: 1.8012869, y: 3.0173986, z: 1}
+>>>>>>> parent of 2927bdc (Merge branch 'main' of https://github.com/eshaqsafi23/EndlessRunnerGame into main)
   m_Children:
   - {fileID: 1440777433}
   m_Father: {fileID: 1268447160}
@@ -500,7 +504,11 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 4.896}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
+<<<<<<< HEAD
   m_AnchoredPosition: {x: 149.5, y: -43.5}
+=======
+  m_AnchoredPosition: {x: 361, y: -39}
+>>>>>>> parent of 2927bdc (Merge branch 'main' of https://github.com/eshaqsafi23/EndlessRunnerGame into main)
   m_SizeDelta: {x: 193.11249, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &921692752
@@ -821,7 +829,11 @@ RectTransform:
   m_GameObject: {fileID: 1371637532}
   m_LocalRotation: {x: -0, y: -0, z: 0.042716, w: 0.99908733}
   m_LocalPosition: {x: 0, y: 0, z: 0}
+<<<<<<< HEAD
   m_LocalScale: {x: 1.3121614, y: 3.0173986, z: 1}
+=======
+  m_LocalScale: {x: 3.1481478, y: 3.0173986, z: 1}
+>>>>>>> parent of 2927bdc (Merge branch 'main' of https://github.com/eshaqsafi23/EndlessRunnerGame into main)
   m_Children:
   - {fileID: 666905303}
   m_Father: {fileID: 1268447160}
@@ -829,7 +841,11 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 4.896}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
+<<<<<<< HEAD
   m_AnchoredPosition: {x: -49.4, y: -90.8}
+=======
+  m_AnchoredPosition: {x: -126, y: -89}
+>>>>>>> parent of 2927bdc (Merge branch 'main' of https://github.com/eshaqsafi23/EndlessRunnerGame into main)
   m_SizeDelta: {x: 163.40454, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1371637534
@@ -1093,17 +1109,30 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2045143394}
+<<<<<<< HEAD
   m_LocalRotation: {x: -0, y: -0, z: -0.12938106, w: 0.991595}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1.5536748, y: 4.1724033, z: 1}
+=======
+  m_LocalRotation: {x: -0.003923328, y: -0.016023498, z: -0.06959699, w: 0.9974388}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 2.2710063, y: 4.1724033, z: 1}
+>>>>>>> parent of 2927bdc (Merge branch 'main' of https://github.com/eshaqsafi23/EndlessRunnerGame into main)
   m_Children:
   - {fileID: 555290828}
   m_Father: {fileID: 1268447160}
   m_RootOrder: 0
+<<<<<<< HEAD
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -14.868}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 110.8, y: 93.2}
+=======
+  m_LocalEulerAnglesHint: {x: -0.576, y: -1.801, z: -7.974}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 260, y: 119}
+>>>>>>> parent of 2927bdc (Merge branch 'main' of https://github.com/eshaqsafi23/EndlessRunnerGame into main)
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2045143396
