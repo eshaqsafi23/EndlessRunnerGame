@@ -33,6 +33,9 @@ ModelImporter:
     animationWrapMode: 0
     extraExposedTransformPaths: []
     extraUserProperties: []
+<<<<<<< HEAD
+    clipAnimations: []
+=======
     clipAnimations:
     - serializedVersion: 16
       name: Scene
@@ -63,6 +66,7 @@ ModelImporter:
       maskType: 3
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 1
+>>>>>>> 3b696472c4074bc4137a49ea4df9b271875e4369
     isReadable: 0
   meshes:
     lODScreenPercentages: []
