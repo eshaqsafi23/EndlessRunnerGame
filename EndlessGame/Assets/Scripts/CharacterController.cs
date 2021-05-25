@@ -23,6 +23,7 @@ public class CharacterController : MonoBehaviour, IPointerDownHandler, IPointerU
     public int points = 0;
     public float autoMoveSpeed;
     public ParticleSystem GunFire;
+    
 
 
     void Start()
@@ -105,10 +106,15 @@ public class CharacterController : MonoBehaviour, IPointerDownHandler, IPointerU
     {
         spawnManager.SpawnTriggerEntered();
 
+       
+
+        
+
     }
     private void OnGUI()
     {
         GUI.Label(new Rect(10, 10, 100, 20), "Score : " + points);
+
     }
 
 }
