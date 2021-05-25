@@ -8,6 +8,11 @@ using UnityEngine.EventSystems;
 public class CharacterController : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
 {
     public bool buttonPressed;
+    public float movementSpeed = 10f;
+    public SpawnManager spawnManager;
+    public int points = 0;
+    public float autoMoveSpeed;
+    public ParticleSystem GunFire;
 
     public void OnPointerDown(PointerEventData eventData)
     {
@@ -18,16 +23,13 @@ public class CharacterController : MonoBehaviour, IPointerDownHandler, IPointerU
     {
         buttonPressed = false;
     }
-    public float movementSpeed = 10f;
-    public SpawnManager spawnManager;
-    public int points = 0;
-    public float autoMoveSpeed;
-    public ParticleSystem GunFire;
+
+
 
 
     void Start()
     {
-
+        //UUs versio
     }
 
     void Update()
@@ -35,6 +37,15 @@ public class CharacterController : MonoBehaviour, IPointerDownHandler, IPointerU
         // Sivuliike
         float hMovement = CrossPlatformInputManager.GetAxis("Horizontal") * movementSpeed / 2;
 
+        if (transform.position.x < -13.2 && hMovement < 0)
+        {
+            hMovement = 0;
+
+        }
+        else if (transform.position.x > -1 && hMovement > 0)
+        {
+            hMovement = 0;
+        }
 
         //Sivuliikkeen rajoitus
         if (transform.position.x < -14 && hMovement < 0)
@@ -55,8 +66,9 @@ public class CharacterController : MonoBehaviour, IPointerDownHandler, IPointerU
         if (Input.GetButtonDown("Fire1"))
         {
             //Soitetaan partikkeliefekti pyssystä
-            GunFire.Play();
-
+             
+            
+            
             RaycastHit hit;
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
 
@@ -71,10 +83,10 @@ public class CharacterController : MonoBehaviour, IPointerDownHandler, IPointerU
                     Rigidbody objRB = objectHit.AddComponent<Rigidbody>();
                     objRB.mass = 0.1f;
                     Vector3 shootDirection = objectHit.transform.position - gameObject.transform.position;
-
+                    GunFire.Play();
 
                     objRB.AddForceAtPosition(shootDirection, hit.point);
-
+                   
                 }
             }
         }
