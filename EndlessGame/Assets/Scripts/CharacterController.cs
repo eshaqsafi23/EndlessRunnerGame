@@ -24,11 +24,6 @@ public class CharacterController : MonoBehaviour, IPointerDownHandler, IPointerU
         buttonPressed = false;
     }
 
-
-
-
-
-
     void Start()
     {
         
