@@ -23,17 +23,10 @@ public class CharacterController : MonoBehaviour, IPointerDownHandler, IPointerU
     {
         buttonPressed = false;
     }
-<<<<<<< HEAD
-    public float movementSpeed = 10f;
-    public SpawnManager spawnManager;
-    public int points = 0;
-    public float autoMoveSpeed;
-    public ParticleSystem GunFire;
-    
-=======
 
 
->>>>>>> 733f7762f174732c2709ee2c1e9269ad3430a821
+
+
 
 
     void Start()
