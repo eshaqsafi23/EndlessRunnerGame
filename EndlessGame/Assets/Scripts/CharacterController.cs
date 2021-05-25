@@ -37,6 +37,15 @@ public class CharacterController : MonoBehaviour, IPointerDownHandler, IPointerU
         // Sivuliike
         float hMovement = CrossPlatformInputManager.GetAxis("Horizontal") * movementSpeed / 2;
 
+        if (transform.position.x < -13.2 && hMovement < 0)
+        {
+            hMovement = 0;
+
+        }
+        else if (transform.position.x > -1 && hMovement > 0)
+        {
+            hMovement = 0;
+        }
 
         //Sivuliikkeen rajoitus
         if (transform.position.x < -14 && hMovement < 0)
