@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Instantiate : MonoBehaviour
 {
-    public Transform prefab;
+    public Transform Yeetprefab;
 
     void Start()
     {
@@ -16,7 +16,7 @@ public class Instantiate : MonoBehaviour
         while (enabled)
         {
             yield return new WaitForSeconds(Random.Range(0.1f, 1.3f));
-            Instantiate(prefab, new Vector3(
+            Instantiate(Yeetprefab, new Vector3(
                 transform.position.x + Random.Range(-2f, 2f),
                 transform.position.y,
                 transform.position.z),
