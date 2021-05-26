@@ -10,9 +10,8 @@ public class HeartSystem : MonoBehaviour
    // public int maxlife = 3;
     public Transform PlayerPrefab;
     public GameObject Heart0;
-    public GameObject Heart1;
     public GameObject Heart2;
-    public static int HeartValue ;
+   public static int HeartValue ;
 
      public void Start()
      {
@@ -51,7 +50,7 @@ public class HeartSystem : MonoBehaviour
 
         if (life == 0)
         {
-            SceneManager.LoadScene("SampleScene");
+            SceneManager.LoadScene("FINAL");
 
         }
 

@@ -61,33 +61,33 @@ public class CharacterController : MonoBehaviour, IPointerDownHandler, IPointerU
 
 
         // Antin ampuminen
-        if (Input.GetButtonDown("Fire1"))
-        {
-            //Soitetaan partikkeliefekti pyssystä
+        /*if (Input.GetButtonDown("Fire1"))
+         {
+             //Soitetaan partikkeliefekti pyssystä
 
-            Debug.Log("PEWPEW");
-            
-            RaycastHit hit;
-            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+             Debug.Log("PEWPEW");
 
-            if (Physics.Raycast(ray, out hit))
-            {
-                GameObject objectHit = hit.transform.gameObject; // esim. kaktus
+             RaycastHit hit;
+             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
 
-                // Lisäys katsotaan että rigidbody ei ole jo olemassa.
-                if (objectHit.CompareTag("Shootable") && (objectHit.GetComponent<Rigidbody>() == null))
-                {
+             if (Physics.Raycast(ray, out hit))
+             {
+                 GameObject objectHit = hit.transform.gameObject; // esim. kaktus
 
-                    Rigidbody objRB = objectHit.AddComponent<Rigidbody>();
-                    objRB.mass = 0.1f;
-                    Vector3 shootDirection = objectHit.transform.position - gameObject.transform.position;
-                    GunFire.Play();
+                 // Lisäys katsotaan että rigidbody ei ole jo olemassa.
+                 if (objectHit.CompareTag("Shootable") && (objectHit.GetComponent<Rigidbody>() == null))
+                 {
 
-                    objRB.AddForceAtPosition(shootDirection, hit.point);
-                   
-                }
-            }
-        }
+                     Rigidbody objRB = objectHit.AddComponent<Rigidbody>();
+                     objRB.mass = 0.1f;
+                     Vector3 shootDirection = objectHit.transform.position - gameObject.transform.position;
+                     GunFire.Play();
+
+                     objRB.AddForceAtPosition(shootDirection, hit.point);
+
+                 }
+             }
+         }*/
 
     }
 
