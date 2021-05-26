@@ -14,7 +14,7 @@ public class MoveObject : MonoBehaviour
     void Update()
     {
         transform.Translate(Vector3.back * Time.deltaTime * moveSpeed);
-        if (transform.position.z < -10)
+        if (transform.position.z < -20)
         {
             transform.position = new Vector3(offset, 0f, 90f);
         }

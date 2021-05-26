@@ -34,17 +34,17 @@ public class CharacterController : MonoBehaviour, IPointerDownHandler, IPointerU
         // Sivuliike
         float hMovement = CrossPlatformInputManager.GetAxis("Horizontal") * movementSpeed / 2;
 
-        if (transform.position.x < -13.2 && hMovement < 0)
+        if (transform.position.x < -10 && hMovement < 0)
         {
             hMovement = 0;
 
         }
-        else if (transform.position.x > -1 && hMovement > 0)
+        else if (transform.position.x > 10 && hMovement > 0)
         {
             hMovement = 0;
         }
 
-        //Sivuliikkeen rajoitus
+        /* //Sivuliikkeen rajoitus
         if (transform.position.x < -14 && hMovement < 0)
         {
             hMovement = 0;
@@ -54,6 +54,7 @@ public class CharacterController : MonoBehaviour, IPointerDownHandler, IPointerU
         {
             hMovement = 0;
         }
+        */
 
         // Liikuttaa pelaajaa, sivuliike GetAxis, eteenpäinliike säädetään itse autoMoveSpeed
         transform.Translate(new Vector3(hMovement, 0, autoMoveSpeed) * Time.deltaTime);
