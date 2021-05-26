@@ -3386,7 +3386,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e561c08981906644892c356d7922671, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prefab: {fileID: 759962063859890585, guid: ed57c34e2650323468f6dd964ed7def6, type: 3}
+  Yeetprefab: {fileID: 0}
 --- !u!4 &1128209846
 Transform:
   m_ObjectHideFlags: 0
@@ -4967,8 +4967,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -292, y: 455}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: -341.2, y: 455}
+  m_SizeDelta: {x: 61.600006, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1640792924
 MonoBehaviour:

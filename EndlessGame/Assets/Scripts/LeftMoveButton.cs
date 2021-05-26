@@ -8,6 +8,10 @@ public class LeftMoveButton : MonoBehaviour, IUpdateSelectedHandler, IPointerDow
     float movementSpeed = 10.0f;
 
     // Start is called before the first frame update
+
+
+
+
     public void OnUpdateSelected(BaseEventData data)
     {
         if (isPressed)
