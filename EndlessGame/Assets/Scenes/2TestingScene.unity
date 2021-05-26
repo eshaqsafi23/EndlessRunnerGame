@@ -2251,6 +2251,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RoadPart
       objectReference: {fileID: 0}
+    - target: {fileID: 1639448811619112757, guid: d61ff82a2d31baa4b91a2e31ae9f5b81, type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
     - target: {fileID: 2580335868994651824, guid: d61ff82a2d31baa4b91a2e31ae9f5b81, type: 3}
       propertyPath: m_TagString
       value: Shootable
@@ -2989,6 +2993,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RoadPart (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1639448811619112757, guid: d61ff82a2d31baa4b91a2e31ae9f5b81, type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
     - target: {fileID: 2580335868994651824, guid: d61ff82a2d31baa4b91a2e31ae9f5b81, type: 3}
       propertyPath: m_TagString
       value: Enemy
@@ -2997,13 +3005,17 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Shootable
       objectReference: {fileID: 0}
+    - target: {fileID: 4114925040876486832, guid: d61ff82a2d31baa4b91a2e31ae9f5b81, type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
     - target: {fileID: 6680478020274002020, guid: d61ff82a2d31baa4b91a2e31ae9f5b81, type: 3}
       propertyPath: m_TagString
       value: Shootable
       objectReference: {fileID: 0}
     - target: {fileID: 7253423261595530613, guid: d61ff82a2d31baa4b91a2e31ae9f5b81, type: 3}
       propertyPath: m_TagString
-      value: Shootable
+      value: Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 9127437572723320561, guid: d61ff82a2d31baa4b91a2e31ae9f5b81, type: 3}
       propertyPath: m_LocalPosition.x
