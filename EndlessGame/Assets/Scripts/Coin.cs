@@ -15,7 +15,7 @@ public class Coin : MonoBehaviour
     {
         
         
-            transform.Rotate(0, 90 * Time.deltaTime, 0);
+       //     transform.Rotate(0, 90 * Time.deltaTime, 0);
 
         
 

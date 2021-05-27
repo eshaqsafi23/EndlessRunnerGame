@@ -12,6 +12,9 @@ TagManager:
   - Enemy
   - Bank
   - Ground
+  - Heart
+  - ThisHeart
+  - PauseButton
   layers:
   - Default
   - TransparentFX

@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 396311292640160228}
   - component: {fileID: 6336962790141179223}
+  - component: {fileID: 1322932379512436427}
   m_Layer: 0
   m_Name: RoadTileTEST
   m_TagString: Untagged
@@ -45,6 +46,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a237c6462a7f2e4eb0ee0aefc469aa7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1322932379512436427
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 396311292640160235}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68670e3b05ee41b4fa246a4b25a20589, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  StuffPrefab: {fileID: 4288530537301416333, guid: 845f2ca50030c7f48bed8bf30c7ecf8e, type: 3}
+  center: {x: 3, y: 3, z: 0}
+  size: {x: 60, y: 1, z: 10}
 --- !u!65 &396311291991869982
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -100,8 +116,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 80, y: 15, z: 15}
-  m_Center: {x: -40, y: 0, z: 0}
+  m_Size: {x: 4.8327065, y: 15, z: 28.976097}
+  m_Center: {x: 8.644251, y: 0, z: 6.9880486}
 --- !u!1001 &396311291643445880
 PrefabInstance:
   m_ObjectHideFlags: 0

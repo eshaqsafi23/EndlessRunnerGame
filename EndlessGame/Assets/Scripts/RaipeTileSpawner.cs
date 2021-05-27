@@ -16,7 +16,7 @@ public class RaipeTileSpawner : MonoBehaviour
     {
         for (int i = 0; i < 300; i++)
         {
-            SpawnTile();
+            Invoke("SpawnTile", 1f + 1f * i);
         }
     }
 }
